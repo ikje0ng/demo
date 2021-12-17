@@ -1,0 +1,46 @@
+------------
+Controller
+------------
+Boardcontroller
+
+------------
+DTO
+------------
+BoardDTO
+
+------------
+Entity
+------------
+Board
+
+------------
+repository
+------------
+Boardrepository
+
+------------
+Service
+------------
+BoardSerivce
+BoardServiceImpl
+-------------------------------------------------
+Controller의 입력폼(/board/post)
+Subject : String
+Content : String
+pwd : String
+
+Controller의 결과폼(/board/result)
+입력한 subject,content,pwd 를 출력
+
+Entity(tbl이름 : tbl_board)
+num int auto_increment
+subject String
+content String
+pwd String
+
+Service
+
+void boardpost(BoardDTO dto)
+->tbl_board에 저장
+
+
